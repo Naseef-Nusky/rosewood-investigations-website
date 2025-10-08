@@ -1,40 +1,46 @@
 import React from 'react';
 import Header from '../components/Header';
 import CallToAction from '../components/CallToAction';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   const services = [
     {
       id: 1,
       title: "Personal Investigation",
+      slug: "personal-investigation",
       desc: "Personal investigation services including background checks, surveillance, and relationship investigations with complete confidentiality.",
       img: "/individual.jpg",
-      cta: "Learn More"
+      cta: "Read More"
     },
     {
       id: 2,
       title: "Fraud Investigation",
+      slug: "fraud-investigation",
       desc: "Comprehensive fraud detection and investigation services for both personal and corporate cases with detailed reporting.",
       img: "/fraud.jpg",
-      cta: "Get Started"
+      cta: "Read More"
     },
     {
       id: 3,
       title: "Missing Persons",
+      slug: "missing-persons",
       desc: "Professional missing person investigations with local and international reach, utilizing advanced search techniques.",
       img: "/missing.jpg",
-      cta: "Find Out More"
+      cta: "Read More"
     },
     {
       id: 4,
       title: "Covert Surveillance",
+      slug: "covert-surveillance",
       desc: "Discreet surveillance operations for various purposes including business investigations and personal matters.",
       img: "/covert.jpg",
-      cta: "Contact Us"
+      cta: "Read More"
     },
     {
       id: 5,
       title: "Background Checking",
+      slug: "background-checking",
       desc: "Comprehensive background checks for employees, business partnerships, and relationships. We provide detailed reports with all vital information you need to make informed decisions.",
       img: "/background.jpg",
       cta: "Read More"
@@ -76,9 +82,12 @@ const Services = () => {
                   <h3 className="text-xl font-bold text-gray-900 mb-3">
                     {service.title}
                   </h3>
-                         <p className="text-gray-600 text-sm leading-relaxed">
+                         <p className="text-gray-600 text-sm leading-relaxed mb-6">
                            {service.desc}
                          </p>
+                         <Link to={`/services/${service.slug}`} className="inline-block bg-cyan-600 hover:bg-cyan-700 text-white px-5 py-2 rounded-lg font-semibold transition-colors duration-300">
+                           {service.cta}
+                         </Link>
                 </div>
               </div>
             ))}

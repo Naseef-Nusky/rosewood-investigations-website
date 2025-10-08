@@ -4,6 +4,8 @@ import { Link, useLocation } from 'react-router-dom';
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false); // desktop dropdown
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false); // mobile submenu
   const location = useLocation();
 
   useEffect(() => {
@@ -20,6 +22,7 @@ const Header = () => {
 
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
+    setIsMobileServicesOpen(false);
   };
 
   return (
@@ -30,19 +33,19 @@ const Header = () => {
     }`}>
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
         {/* Logo */}
-        <div className="logo group flex items-center">
+        <Link to="/" className="logo group flex items-center">
           <img 
             src="/logo.png" 
             alt="Rosewood Investigations Logo" 
             className="h-10 w-auto transition-all duration-300 group-hover:scale-105"
           />
-        </div>
+        </Link>
         
         {/* Desktop Navigation Menu */}
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:flex space-x-8 items-center whitespace-nowrap">
           <Link 
             to="/" 
-            className={`font-medium transition-colors duration-300 ${
+            className={`font-medium transition-colors duration-300 inline-flex items-center h-10 ${
               location.pathname === '/' 
                 ? 'text-cyan-600' 
                 : 'text-gray-800 hover:text-cyan-600'
@@ -50,19 +53,35 @@ const Header = () => {
           >
             HOME
           </Link>
-          <Link 
-            to="/services" 
-            className={`font-medium transition-colors duration-300 ${
-              location.pathname === '/services' 
-                ? 'text-cyan-600' 
-                : 'text-gray-800 hover:text-cyan-600'
-            }`}
+          <div 
+            className="relative"
+            onMouseEnter={() => setIsServicesOpen(true)}
+            onMouseLeave={() => setIsServicesOpen(false)}
           >
-            OUR SERVICES
-          </Link>
+            <Link 
+              to="/services" 
+              className={`font-medium transition-colors duration-300 inline-flex items-center gap-1 h-10 whitespace-nowrap ${
+                location.pathname.startsWith('/services') 
+                  ? 'text-cyan-600' 
+                  : 'text-gray-800 hover:text-cyan-600'
+              }`}
+            >
+              OUR SERVICES
+              <span className={`transition-transform ${isServicesOpen ? 'rotate-180' : ''}`}>▾</span>
+            </Link>
+            {isServicesOpen && (
+              <div className="absolute left-0 top-full w-72 bg-white rounded-xl shadow-2xl border border-gray-100 py-2 z-50">
+                <Link to="/services/personal-investigation" className="block px-4 py-2 text-gray-700 hover:bg-gray-50" onClick={() => setIsServicesOpen(false)}>Personal Investigation</Link>
+                <Link to="/services/covert-surveillance" className="block px-4 py-2 text-gray-700 hover:bg-gray-50" onClick={() => setIsServicesOpen(false)}>Covert Surveillance</Link>
+                <Link to="/services/fraud-investigation" className="block px-4 py-2 text-gray-700 hover:bg-gray-50" onClick={() => setIsServicesOpen(false)}>Fraud Investigation</Link>
+                <Link to="/services/missing-persons" className="block px-4 py-2 text-gray-700 hover:bg-gray-50" onClick={() => setIsServicesOpen(false)}>Missing Persons</Link>
+                <Link to="/services/background-checking" className="block px-4 py-2 text-gray-700 hover:bg-gray-50" onClick={() => setIsServicesOpen(false)}>Background Checking</Link>
+              </div>
+            )}
+          </div>
           <Link 
             to="/about" 
-            className={`font-medium transition-colors duration-300 ${
+            className={`font-medium transition-colors duration-300 inline-flex items-center h-10 ${
               location.pathname === '/about' 
                 ? 'text-cyan-600' 
                 : 'text-gray-800 hover:text-cyan-600'
@@ -72,7 +91,7 @@ const Header = () => {
           </Link>
           <Link 
             to="/contact" 
-            className={`font-medium transition-colors duration-300 ${
+            className={`font-medium transition-colors duration-300 inline-flex items-center h-10 ${
               location.pathname === '/contact' 
                 ? 'text-cyan-600' 
                 : 'text-gray-800 hover:text-cyan-600'
@@ -107,11 +126,11 @@ const Header = () => {
           : 'max-h-0 opacity-0 overflow-hidden'
       }`}>
         <nav className="bg-white/95 backdrop-blur-xl border-t border-gray-200 shadow-lg">
-          <div className="container mx-auto px-4 py-4 space-y-4">
+          <div className="container mx-auto px-4 py-4 space-y-4 text-left">
             <Link 
               to="/" 
               onClick={closeMobileMenu}
-              className={`block font-medium transition-colors duration-300 py-2 ${
+              className={`block font-medium transition-colors duration-300 py-2 text-left ${
                 location.pathname === '/' 
                   ? 'text-cyan-600' 
                   : 'text-gray-800 hover:text-cyan-600'
@@ -119,21 +138,33 @@ const Header = () => {
             >
               HOME
             </Link>
-            <Link 
-              to="/services" 
-              onClick={closeMobileMenu}
-              className={`block font-medium transition-colors duration-300 py-2 ${
-                location.pathname === '/services' 
+            {/* Mobile Services with submenu */}
+            <button 
+              type="button"
+              onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+              className={`w-full text-left block font-medium transition-colors duration-300 py-2 ${
+                location.pathname.startsWith('/services') 
                   ? 'text-cyan-600' 
                   : 'text-gray-800 hover:text-cyan-600'
               }`}
+              aria-expanded={isMobileServicesOpen}
             >
-              OUR SERVICES
-            </Link>
+              <span className="inline-flex items-center gap-2">OUR SERVICES <span className={`transition-transform ${isMobileServicesOpen ? 'rotate-180' : ''}`}>▾</span></span>
+            </button>
+            {isMobileServicesOpen && (
+              <div className="pl-4 space-y-2 pb-2 text-left">
+                <Link to="/services" onClick={closeMobileMenu} className="block text-left text-gray-700 hover:text-cyan-600 py-1">All Services</Link>
+                <Link to="/services/personal-investigation" onClick={closeMobileMenu} className="block text-left text-gray-700 hover:text-cyan-600 py-1">Personal Investigation</Link>
+                <Link to="/services/covert-surveillance" onClick={closeMobileMenu} className="block text-left text-gray-700 hover:text-cyan-600 py-1">Covert Surveillance</Link>
+                <Link to="/services/fraud-investigation" onClick={closeMobileMenu} className="block text-left text-gray-700 hover:text-cyan-600 py-1">Fraud Investigation</Link>
+                <Link to="/services/missing-persons" onClick={closeMobileMenu} className="block text-left text-gray-700 hover:text-cyan-600 py-1">Missing Persons</Link>
+                <Link to="/services/background-checking" onClick={closeMobileMenu} className="block text-left text-gray-700 hover:text-cyan-600 py-1">Background Checking</Link>
+              </div>
+            )}
             <Link 
               to="/about" 
               onClick={closeMobileMenu}
-              className={`block font-medium transition-colors duration-300 py-2 ${
+              className={`block font-medium transition-colors duration-300 py-2 text-left ${
                 location.pathname === '/about' 
                   ? 'text-cyan-600' 
                   : 'text-gray-800 hover:text-cyan-600'
@@ -144,7 +175,7 @@ const Header = () => {
             <Link 
               to="/contact" 
               onClick={closeMobileMenu}
-              className={`block font-medium transition-colors duration-300 py-2 ${
+              className={`block font-medium transition-colors duration-300 py-2 text-left ${
                 location.pathname === '/contact' 
                   ? 'text-cyan-600' 
                   : 'text-gray-800 hover:text-cyan-600'

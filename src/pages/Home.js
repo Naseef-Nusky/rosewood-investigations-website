@@ -23,9 +23,7 @@ const Home = () => {
             Rosewood <span className="text-cyan-400">Investigations</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200 leading-relaxed">
-            Professional investigative services you can trust. 
-            <br />
-            Confidential, thorough, and results-driven.
+            Specialist in private, corporate and legal investigations.
           </p>
                  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                    <Link 
@@ -54,69 +52,37 @@ const Home = () => {
       {/* Our Expertise Section */}
       <section className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Our <span className="text-cyan-600">Expertise</span>
-            </h2>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
-              Professional Investigation Services with Unmatched Precision
-            </p>
-            <p className="text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              With decades of combined experience, our team delivers comprehensive investigation solutions tailored to your specific needs. We combine traditional investigative methods with cutting-edge technology to ensure thorough and accurate results.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-white text-2xl font-bold">🔍</span>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Advanced Surveillance</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  State-of-the-art surveillance techniques with modern technology for discreet and effective monitoring
-                </p>
+          <div className="max-w-6xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Introducing Rosewood Investigations –<span className="text-cyan-600"> Your Private Investigator In Guildford, Surrey</span></h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">Trusted private and corporate investigations across Guildford, Surrey, and the UK.</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+              <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
+                <div className="text-cyan-600 text-2xl mb-3">🕵️</div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Experts In Investigation</h3>
+                <p className="text-gray-700 leading-relaxed">Based in Guildford, Surrey with worldwide investigators supporting private and corporate cases locally and across the UK.</p>
+              </div>
+              <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
+                <div className="text-cyan-600 text-2xl mb-3">🔐</div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Trusted & Discreet</h3>
+                <p className="text-gray-700 leading-relaxed">When challenges arise, our trusted team works with complete discretion to uncover the truth and provide the answers you need.</p>
+              </div>
+              <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
+                <div className="text-cyan-600 text-2xl mb-3">⚖️</div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Committed To Standards</h3>
+                <p className="text-gray-700 leading-relaxed">High success rate and strict ethical practice, delivering confident, expert advice to clients across the UK.</p>
+              </div>
+              <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
+                <div className="text-cyan-600 text-2xl mb-3">🌐</div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Comprehensive Coverage</h3>
+                <p className="text-gray-700 leading-relaxed">From personal matters and fraud to thorough background checks—local Guildford expertise with nationwide reach.</p>
               </div>
             </div>
-
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-white text-2xl font-bold">🛡️</span>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Complete Confidentiality</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Absolute discretion and privacy protection ensuring your case remains completely confidential
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-white text-2xl font-bold">⚡</span>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Rapid Response</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  24/7 availability with quick response times to address urgent investigation needs
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-white text-2xl font-bold">🎯</span>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Precision Results</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Detailed reporting with actionable insights and comprehensive evidence gathering
-                </p>
-              </div>
-            </div>
+            
           </div>
         </div>
       </section>
+
+      {/* Our Expertise Section - removed per request */}
 
       {/* Featured Services Section */}
       <section className="py-20 bg-white">
@@ -200,7 +166,21 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Call to Action Section */}
+      {/* Why Choose Us Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="max-w-5xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Us As <span className="text-cyan-600">Your Private Investigator</span></h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">We combine uncompromising confidentiality, deep local knowledge, and national reach to deliver clear, actionable answers—ethically and efficiently.</p>
+            <div className="space-y-4 text-gray-700 leading-relaxed text-left md:text-center">
+              <p>Rosewood Investigations is one of the top private investigators in Guildford, Surrey and there are several reasons why. Our commitment to professionalism, ethics, and confidentiality is unparalleled and we handle every case with these values in mind. We understand that your trust is crucial and we take great care in safeguarding your information.</p>
+              <p>Our extensive knowledge of private investigations in Guildford and the surrounding areas of Surrey gives us a competitive edge in local service, but we also serve clients nationally across the whole of the UK. We have a deep understanding of both national and local landscapes, nuances, and unique challenges, which enables us to navigate the terrain efficiently and effectively.</p>
+              <p>By choosing Rosewood Investigations, you are selecting a dedicated private detective and investigator in Guildford to uncover the truth, regardless of how elusive it may seem. We aim to provide you with the answers you seek, ensuring that you have the information necessary to make informed decisions and regain control of your life.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <CallToAction />
 
       {/* Contact Section */}
