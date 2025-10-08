@@ -52,9 +52,11 @@ const Home = () => {
       {/* Our Expertise Section */}
       <section className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="max-w-6xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Introducing Rosewood Investigations –<span className="text-cyan-600"> Your Private Investigator In Guildford, Surrey</span></h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">Trusted private and corporate investigations across Guildford, Surrey, and the UK.</p>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">Introducing Rosewood Investigations –<span className="text-cyan-600"> Your Private Investigator In Guildford, Surrey</span></h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">Trusted private and corporate investigations across Guildford, Surrey, and the UK.</p>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
               <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
                 <div className="text-cyan-600 text-2xl mb-3">🕵️</div>
@@ -88,7 +90,7 @@ const Home = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 md:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
               Our <span className="text-cyan-600">Featured Services</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -169,9 +171,11 @@ const Home = () => {
       {/* Why Choose Us Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Us As <span className="text-cyan-600">Your Private Investigator</span></h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">We combine uncompromising confidentiality, deep local knowledge, and national reach to deliver clear, actionable answers—ethically and efficiently.</p>
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">Why Choose Us As <span className="text-cyan-600">Your Private Investigator</span></h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">We combine uncompromising confidentiality, deep local knowledge, and national reach to deliver clear, actionable answers—ethically and efficiently.</p>
+            </div>
             <div className="space-y-4 text-gray-700 leading-relaxed text-left md:text-center">
               <p>Rosewood Investigations is one of the top private investigators in Guildford, Surrey and there are several reasons why. Our commitment to professionalism, ethics, and confidentiality is unparalleled and we handle every case with these values in mind. We understand that your trust is crucial and we take great care in safeguarding your information.</p>
               <p>Our extensive knowledge of private investigations in Guildford and the surrounding areas of Surrey gives us a competitive edge in local service, but we also serve clients nationally across the whole of the UK. We have a deep understanding of both national and local landscapes, nuances, and unique challenges, which enables us to navigate the terrain efficiently and effectively.</p>
