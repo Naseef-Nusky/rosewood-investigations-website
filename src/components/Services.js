@@ -34,6 +34,14 @@ const Services = () => {
       img: '/missing.jpg',
       cta: 'Enquire Now',
     },
+    {
+      id: 5,
+      title: 'Background Checking',
+      desc:
+        'When you\'re thinking about hiring a new employee, starting a business partnership, or getting into a new relationship, it\'s crucial to have a clear understanding of the person\'s background. We conduct background checks and corporate investigation services that can provide you with a comprehensive full report and a complete profile, offering you all the vital information you need to make an informed decision. With our help, you can rest assured that you have all the facts you need to make a confident and safe choice.',
+      img: '/background.jpg',
+      cta: 'Read More',
+    },
   ];
 
   return (
@@ -49,7 +57,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
           {services.map((service) => (
             <div
               key={service.id}
