@@ -6,7 +6,7 @@ const Services = () => {
   const services = [
     {
       id: 1,
-      title: "Individual Investigations",
+      title: "Personal Investigation",
       desc: "Personal investigation services including background checks, surveillance, and relationship investigations with complete confidentiality.",
       img: "/individual.jpg",
       cta: "Learn More"

@@ -139,7 +139,7 @@ const Home = () => {
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Individual Investigations
+                  Personal Investigation
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-6">
                   Our team of highly skilled detectives is proficient in various investigations, ranging from online dating inquiries to missing person and matrimonial cases.
