@@ -17,7 +17,7 @@ const ContactSection = () => {
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-white">Call Us Today For A Free Confidential Discussion</h2>
           <p className="text-gray-200 mt-3 max-w-3xl mx-auto">
-            Looking for confidential advice from a trusted private investigator in the county town of Guildford, Surrey? Then look no further than Rosewood Investigations. We offer a wide range of services in both Guildford and across the whole of the UK tailored to your specific needs, all delivered with professionalism, ethics, and confidentiality. No matter how challenging your situation may seem, we’ll work tirelessly to uncover the truth. Get in touch with Rosewood Investigations today and let us guide you toward clarity and resolution.
+            Looking for confidential advice from a trusted private investigator covering all areas of Great Britain and worldwide, then look no further than Rosewood Investigations. We offer a comprehensive range of investigative services tailored to your specific needs, all delivered with professionalism, ethics, and complete confidentiality. No matter how complex or challenging your situation may be, we work tirelessly to uncover the truth and provide you with the clarity you deserve. Get in touch with Rosewood Investigations today and let us guide you toward resolution and peace of mind.
           </p>
           <div className="mt-4 inline-flex items-center justify-center text-teal-300 font-semibold">
             <span className="mr-2">📞</span> <span>0740 7612 398</span>

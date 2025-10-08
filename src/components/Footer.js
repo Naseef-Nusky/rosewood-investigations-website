@@ -52,8 +52,7 @@ const Footer = () => {
                 <span className="mr-3 mt-1">📍</span>
                 <div className="text-left">
                   <p className="font-semibold text-left">ROSEWOOD INVESTIGATIONS.</p>
-                  <p className="text-left">Units, A-J Austen house, Station view,</p>
-                  <p className="text-left">Guildford, GU1 4AR</p>
+                  <p className="text-left">Operating across areas of Great Britain and worldwide</p>
                 </div>
               </div>
               <div className="flex items-center text-left">
