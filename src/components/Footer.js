@@ -52,7 +52,7 @@ const Footer = () => {
                 <span className="mr-3 mt-1">📍</span>
                 <div className="text-left">
                   <p className="font-semibold text-left">ROSEWOOD INVESTIGATIONS.</p>
-                  <p className="text-left">Operating across areas of Great Britain and worldwide</p>
+                  <p className="text-left">Covering all areas of Great Britain and worldwide</p>
                 </div>
               </div>
               <div className="flex items-center text-left">

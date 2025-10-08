@@ -44,7 +44,7 @@ const MissingPersons = () => {
         <div className="space-y-4">
           <h2 className="text-2xl font-bold text-gray-800">Why Choose Rosewood Investigations?</h2>
           <p className="text-gray-700 leading-relaxed">
-            When it comes to missing person investigations, Rosewood Investigations is the trusted name in the field. Operating across areas of Great Britain and worldwide, we have a highly experienced team of private investigators with a proven track record of successfully resolving missing persons investigations.
+            When it comes to missing person investigations, Rosewood Investigations is the trusted name in the field, covering all areas of Great Britain and worldwide. We have a highly experienced team of private investigators with a proven track record of successfully resolving missing persons investigations.
           </p>
           <p className="text-gray-700 leading-relaxed">
             At Rosewood Investigations, we understand the emotional toll that missing person cases can take on family members, and our team is dedicated to providing compassionate and effective assistance, and a straightforward approach.

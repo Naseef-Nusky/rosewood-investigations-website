@@ -54,14 +54,14 @@ const Home = () => {
         <div className="container mx-auto px-4 md:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">Introducing Rosewood Investigations –<span className="text-cyan-600"> Your Private Investigator in areas of Great Britain and worldwide</span></h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">Trusted private and corporate investigations across areas of Great Britain and worldwide.</p>
+              <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">Introducing Rosewood Investigations –<span className="text-cyan-600"> Your Private Investigator covering all areas of Great Britain and worldwide</span></h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">Trusted private and corporate investigations covering all areas of Great Britain and worldwide.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
               <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
                 <div className="text-cyan-600 text-2xl mb-3">🕵️</div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Experts In Investigation</h3>
-                <p className="text-gray-700 leading-relaxed">Operating across areas of Great Britain and worldwide with investigators supporting private and corporate cases locally and internationally.</p>
+                <p className="text-gray-700 leading-relaxed">Operating, covering all areas of Great Britain and worldwide with investigators supporting private and corporate cases locally and internationally.</p>
               </div>
               <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
                 <div className="text-cyan-600 text-2xl mb-3">🔐</div>
@@ -76,7 +76,7 @@ const Home = () => {
               <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
                 <div className="text-cyan-600 text-2xl mb-3">🌐</div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Comprehensive Coverage</h3>
-                <p className="text-gray-700 leading-relaxed">From personal matters and fraud to thorough background checks—local expertise across areas of Great Britain with worldwide reach.</p>
+                <p className="text-gray-700 leading-relaxed">From personal matters and fraud to thorough background checks—local expertise covering all areas of Great Britain with worldwide reach.</p>
               </div>
             </div>
             
@@ -177,9 +177,9 @@ const Home = () => {
               <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">We combine uncompromising confidentiality, deep local knowledge, and national reach to deliver clear, actionable answers—ethically and efficiently.</p>
             </div>
             <div className="space-y-4 text-gray-700 leading-relaxed text-left md:text-center">
-              <p>Rosewood Investigations is one of the top private investigators across areas of Great Britain and worldwide, and there are several reasons why. Our commitment to professionalism, ethics, and confidentiality is unparalleled and we handle every case with these values in mind. We understand that your trust is crucial and we take great care in safeguarding your information.</p>
-              <p>Our extensive knowledge of private investigations across areas of Great Britain gives us a competitive edge in local service, and we also serve clients internationally. We have a deep understanding of both national and international landscapes, nuances, and unique challenges, which enables us to navigate the terrain efficiently and effectively.</p>
-              <p>By choosing Rosewood Investigations, you are selecting a dedicated private detective and investigator operating across areas of Great Britain and worldwide to uncover the truth, regardless of how elusive it may seem. We aim to provide you with the answers you seek, ensuring that you have the information necessary to make informed decisions and regain control of your life.</p>
+              <p>Rosewood Investigations is one of the top private investigators covering all areas of Great Britain and worldwide, and there are several reasons why. Our commitment to professionalism, ethics, and confidentiality is unparalleled and we handle every case with these values in mind. We understand that your trust is crucial and we take great care in safeguarding your information.</p>
+              <p>Our extensive knowledge of private investigations covering all areas of Great Britain gives us a competitive edge in local service, and we also serve clients internationally. We have a deep understanding of both national and international landscapes, nuances, and unique challenges, which enables us to navigate the terrain efficiently and effectively.</p>
+              <p>By choosing Rosewood Investigations, you are selecting a dedicated private detective and investigator covering all areas of Great Britain and worldwide to uncover the truth, regardless of how elusive it may seem. We aim to provide you with the answers you seek, ensuring that you have the information necessary to make informed decisions and regain control of your life.</p>
             </div>
           </div>
         </div>
