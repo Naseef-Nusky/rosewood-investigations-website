@@ -18,9 +18,9 @@ const PrivacyPolicy = () => {
       </section>
 
       <section className="pb-20">
-        <div className="max-w-4xl mx-auto px-6 md:px-16 lg:px-32">
+        <div className="mx-auto px-6 md:px-16 lg:px-32 max-w-7xl">
           {/* Intro */}
-          <p className="text-gray-700 mb-6 leading-relaxed text-sm md:text-base">
+          <p className="text-gray-700 mb-6 leading-relaxed text-sm md:text-base text-justify">
             Rosewood Investigations is committed to ensuring that your privacy is protected.
             This policy explains how we use the information we collect about you, how you can
             instruct us if you prefer to limit the use of that information, and the procedures
@@ -28,10 +28,10 @@ const PrivacyPolicy = () => {
           </p>
 
           {/* Section 1 */}
-          <h2 className="text-lg font-semibold text-black mb-2">
+          <h2 className="text-lg font-semibold text-black mb-2 text-left">
             1. The Information We Collect and How We Use It
           </h2>
-          <p className="text-gray-700 mb-4 text-sm md:text-base leading-relaxed">
+          <p className="text-gray-700 mb-4 text-sm md:text-base leading-relaxed text-justify">
             If you submit an inquiry and respond to any of the requests for information in our
             feedback service, you may as a result submit to us your email address. Access to your
             personal data, including your email address, is only provided to our staff and third
@@ -40,8 +40,8 @@ const PrivacyPolicy = () => {
           </p>
 
           {/* Cookies */}
-          <h3 className="text-md font-semibold text-black mb-2">About Cookies</h3>
-          <p className="text-gray-700 mb-6 text-sm md:text-base leading-relaxed">
+          <h3 className="text-md font-semibold text-black mb-2 text-left">About Cookies</h3>
+          <p className="text-gray-700 mb-6 text-sm md:text-base leading-relaxed text-justify">
             We use cookies. A cookie is a small file that is stored on your computer’s hard drive by
             your web browser. They allow us to understand what areas of the website are of interest
             to our visitors and allow us to provide a better user experience. These cookies do not
@@ -64,10 +64,10 @@ const PrivacyPolicy = () => {
           </p>
 
           {/* Section 2 */}
-          <h2 className="text-lg font-semibold text-black mb-2">
+          <h2 className="text-lg font-semibold text-black mb-2 text-left">
             2. How We Protect Your Information
           </h2>
-          <p className="text-gray-700 mb-6 text-sm md:text-base leading-relaxed">
+          <p className="text-gray-700 mb-6 text-sm md:text-base leading-relaxed text-justify">
             The internet is not a secure medium. However, we have put in place various security
             procedures as set out in this policy. Firewalls are used to block unauthorised traffic to
             the servers, and the actual servers are located in a secure location which can only be
@@ -76,8 +76,8 @@ const PrivacyPolicy = () => {
           </p>
 
           {/* Section 3 */}
-          <h2 className="text-lg font-semibold text-black mb-2">3. Your Consent</h2>
-          <p className="text-gray-700 mb-6 text-sm md:text-base leading-relaxed">
+          <h2 className="text-lg font-semibold text-black mb-2 text-left">3. Your Consent</h2>
+          <p className="text-gray-700 mb-6 text-sm md:text-base leading-relaxed text-justify">
             By submitting any information about you and, where applicable, others within this
             website, you and they consent to its use as set out in this Privacy Policy. If we change
             our Privacy Policy, we will post the changes on this page and may place notices on other
@@ -96,15 +96,15 @@ const PrivacyPolicy = () => {
           </p>
 
           {/* Section 4 */}
-          <h2 className="text-lg font-semibold text-black mb-2">
+          <h2 className="text-lg font-semibold text-black mb-2 text-left">
             4. Passing on Information About You
           </h2>
-          <p className="text-gray-700 mb-4 text-sm md:text-base leading-relaxed">
+          <p className="text-gray-700 mb-4 text-sm md:text-base leading-relaxed text-justify">
             Please be aware that once you use our website or our services, you will be regarded as
             having given your consent to us disclosing your personal information to the following
             parties:
           </p>
-          <ul className="list-disc list-inside text-gray-700 mb-6 text-sm md:text-base leading-relaxed">
+          <ul className="list-disc list-inside text-gray-700 mb-6 text-sm md:text-base leading-relaxed text-justify">
             <li>Third parties who help us to process your inquiry.</li>
             <li>
               We may disclose information about you in connection with legal proceedings or potential
@@ -114,17 +114,17 @@ const PrivacyPolicy = () => {
               Our trusted business partners, whose products and services may save you money.
             </li>
           </ul>
-          <p className="text-gray-700 mb-6 text-sm md:text-base leading-relaxed">
+          <p className="text-gray-700 mb-6 text-sm md:text-base leading-relaxed text-justify">
             You can ask us to stop passing your information to third parties for marketing purposes at
             any time, which we will do. Such a request may result in us ceasing to offer the services
             to you.
           </p>
 
           {/* Section 5 */}
-          <h2 className="text-lg font-semibold text-black mb-2">
+          <h2 className="text-lg font-semibold text-black mb-2 text-left">
             5. How to Contact Rosewood Investigations
           </h2>
-          <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+          <p className="text-gray-700 text-sm md:text-base leading-relaxed text-justify">
             We welcome your views about our website and our Privacy Policy. If you have any queries or
             comments, feel free to contact us.
           </p>
