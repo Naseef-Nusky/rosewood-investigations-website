@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -46,38 +47,30 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="text-left">
-            <h3 className="text-lg font-semibold mb-4 text-teal-600 text-left">Contact Us</h3>
+            <h3 className="text-lg font-semibold mb-4 text-teal-600 text-left">Quick Links</h3>
             <div className="space-y-3 text-gray-700 text-left">
-              <div className="flex items-start text-left">
-                <span className="mr-3 mt-1">📍</span>
-                <div className="text-left">
-                  <p className="font-semibold text-left">ROSEWOOD INVESTIGATIONS.</p>
-                  <p className="text-left">Covering all areas of Great Britain and worldwide</p>
-                </div>
+              <div>
+                <Link to="/contact" className="hover:text-teal-600 transition-colors">Contact</Link>
               </div>
-              <div className="flex items-center text-left">
-                <span className="mr-3">📧</span>
-                <span className="text-left">private@rosewoodinvestigations.com</span>
+              <div>
+                <Link to="/privacy-policy" className="hover:text-teal-600 transition-colors">Privacy Policy</Link>
               </div>
-              <div className="flex items-center text-left">
-                <span className="mr-3">📞</span>
-                <span className="text-left">0740 7612 398</span>
+              <div>
+                <Link to="/terms-and-conditions" className="hover:text-teal-600 transition-colors">Terms & Conditions</Link>
               </div>
             </div>
           </div>
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-gray-200 mt-8 pt-8 flex flex-col md:flex-row justify-between items-start">
+        <div className="border-t border-gray-200 mt-8 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center">
           <div className="text-gray-500 text-sm mb-4 md:mb-0 text-left">© Copyright 2025 | All Rights Reserved</div>
-          <div className="flex space-x-4 text-left">
-            <div className="text-gray-500 text-sm">
-              Licensed & Insured Private Investigators
-            </div>
-            <div className="flex items-center">
-              <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
-              <span className="text-sm text-gray-500">24/7 Available</span>
-            </div>
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-gray-600">
+            <Link to="/contact" className="hover:text-teal-600">Contact</Link>
+            <span className="text-gray-300">|</span>
+            <Link to="/privacy-policy" className="hover:text-teal-600">Privacy Policy</Link>
+            <span className="text-gray-300">|</span>
+            <Link to="/terms-and-conditions" className="hover:text-teal-600">Terms & Conditions</Link>
           </div>
         </div>
       </div>

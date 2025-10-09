@@ -14,6 +14,8 @@ import CovertSurveillance from './pages/services/CovertSurveillance';
 import BackgroundChecking from './pages/services/BackgroundChecking';
 import Footer from './components/Footer';
 import './App.css';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsAndConditions from './pages/TermsAndConditions';
 
 function App() {
   return (
@@ -33,6 +35,8 @@ function App() {
             <Route path="/services/covert-surveillance" element={<CovertSurveillance />} />
             <Route path="/services/background-checking" element={<BackgroundChecking />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           </Routes>
         </main>
         <Footer />
