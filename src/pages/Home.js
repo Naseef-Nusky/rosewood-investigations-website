@@ -49,42 +49,46 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Our Expertise Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+      {/* Introducing Section (replaces Expertise) */}
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">Introducing Rosewood Investigations –<span className="text-cyan-600"> Your Private Investigator covering all areas of Great Britain and worldwide</span></h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">Trusted private and corporate investigations covering all areas of Great Britain and worldwide.</p>
+          {/* Centered heading to match previous design */}
+          <div className="text-center mb-10 max-w-6xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+              Introducing Rosewood Investigations – <span className="text-cyan-600">Your Private Investigator in all areas of Great Britain and worldwide</span>
+            </h2>
+            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">Experts in private and corporate investigations with local expertise and nationwide reach across all areas of Great Britain and worldwide.</p>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
+            {/* Copy */}
+            <div className="text-left">
+              <div className="space-y-6 text-gray-700 leading-relaxed">
+                <p className="text-xl md:text-2xl text-gray-900/90">
+                  Based locally with a dedicated worldwide team, we support complex cases across all areas of Great Britain and worldwide with absolute discretion and a proven approach.
+                </p>
+                <p>
+                  Life is full of mysteries, secrets and unanswered questions. Sometimes, a curious mind is not enough to uncover the truth. That’s where Rosewood Investigations comes in – trusted private investigators who provide clear answers when they matter most.
+                </p>
+                <p>
+                  Our team delivers truth with confidence and care, adhering to strict ethical standards while keeping your objectives and legal boundaries at the centre of every action.
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3"><span className="text-cyan-600 mt-1">✓</span><span><strong>Local insight, national scale</strong> – deep knowledge with coverage across all areas of Great Britain and worldwide.</span></li>
+                  <li className="flex items-start gap-3"><span className="text-cyan-600 mt-1">✓</span><span><strong>Discreet and compliant</strong> – lawful methods, documented evidence and strict confidentiality.</span></li>
+                  <li className="flex items-start gap-3"><span className="text-cyan-600 mt-1">✓</span><span><strong>Versatile expertise</strong> – personal matters, corporate cases, fraud, and thorough background checks.</span></li>
+                </ul>
+              </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
-              <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
-                <div className="text-cyan-600 text-2xl mb-3">🕵️</div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Experts In Investigation</h3>
-                <p className="text-gray-700 leading-relaxed">Operating, covering all areas of Great Britain and worldwide with investigators supporting private and corporate cases locally and internationally.</p>
-              </div>
-              <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
-                <div className="text-cyan-600 text-2xl mb-3">🔐</div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Trusted & Discreet</h3>
-                <p className="text-gray-700 leading-relaxed">When challenges arise, our trusted team works with complete discretion to uncover the truth and provide the answers you need.</p>
-              </div>
-              <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
-                <div className="text-cyan-600 text-2xl mb-3">⚖️</div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Committed To Standards</h3>
-                <p className="text-gray-700 leading-relaxed">High success rate and strict ethical practice, delivering confident, expert advice to clients across the UK.</p>
-              </div>
-              <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
-                <div className="text-cyan-600 text-2xl mb-3">🌐</div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Comprehensive Coverage</h3>
-                <p className="text-gray-700 leading-relaxed">From personal matters and fraud to thorough background checks—local expertise covering all areas of Great Britain with worldwide reach.</p>
-              </div>
+            {/* Image collage redesigned to two images */}
+            <div className="relative md:pl-8">
+              {/* Tall hero image */}
+              <img src="/1.jpg" alt="Investigation planning" className="w-full h-[460px] md:h-[520px] object-cover rounded-[28px] shadow-2xl ring-1 ring-black/10" />
+              {/* Overlapping smaller image (hidden on mobile) */}
+              <img src="/2.jpg" alt="Surveillance in action" className="hidden md:block absolute -right-2 -bottom-10 w-2/3 h-56 md:h-64 object-cover rounded-2xl shadow-xl ring-1 ring-black/5 md:rotate-1" />
             </div>
-            
           </div>
         </div>
       </section>
-
-      {/* Our Expertise Section - removed per request */}
 
       {/* Featured Services Section */}
       <section className="py-20 bg-white">
